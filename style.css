@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-rows: 1fr 2fr 7fr;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: burlywood;
+  text-align: center;
+}
+
+section {
+  background-color: cadetblue;
+}
+
+.game-gridwrapper {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 0px;
+}
+
+.row1, .row2, .row3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  /* border: .2rem solid black; */
+}
+
+main div {
+  border: .2rem solid black;
+}
