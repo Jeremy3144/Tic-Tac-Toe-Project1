@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto&family=Unkempt:wght@700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -19,12 +19,14 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga quaerat sapiente ea voluptate excepturi, repellat eum incidunt natus obcaecati aliquam. Facere adipisci est quaerat libero a culpa delectus beatae?
       </p>
       <nav>
-        <button>Asign Player</button>
-        <button>Next Game</button>
-        <button>Reset</button>
+        <button class="plyr-asign-btn">Asign Player</button>
+        <button class="nxt-game-btn">Next Game</button>
+        <button class="reset-btn">Reset</button>
       </nav>
-      <input type="text">
-      <input type="text">
+      <div class="inputs">
+        <input class="player-name1" type="text" placeholder="X Player 1 Name X">
+        <input class="player-name2"  type="text" placeholder="O Player 2 Name O">
+      </div>
     </section>
 
     <div class="Scores">
@@ -32,15 +34,15 @@
     </div>
 
     <main class="game-gridwrapper">
-        <div data-gmbx="1" class="btn">1</div>
-        <div data-gmbx="2" class="btn">2</div>
-        <div data-gmbx="3" class="btn">3</div>
-        <div data-gmbx="4" class="btn">4</div>
-        <div data-gmbx="5" class="btn">5</div>
-        <div data-gmbx="6" class="btn">6</div>
-        <div data-gmbx="7" class="btn">7</div>
-        <div data-gmbx="8" class="btn">8</div>
-        <div data-gmbx="9" class="btn">9</div>
+        <div data-gmbx="1" class="btn rb-border"></div>
+        <div data-gmbx="2" class="btn b-border"></div>
+        <div data-gmbx="3" class="btn lb-border"></div>
+        <div data-gmbx="4" class="btn rb-border"></div>
+        <div data-gmbx="5" class="btn b-border"></div>
+        <div data-gmbx="6" class="btn lb-border"></div>
+        <div data-gmbx="7" class="btn r-border"></div>
+        <div data-gmbx="8" class="btn"></div>
+        <div data-gmbx="9" class="btn l-border"></div>
     </main>
   </div>
   <script src="app.js"></script>
