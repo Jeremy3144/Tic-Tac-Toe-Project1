@@ -16,7 +16,7 @@ var boxesPlayed = [];
 var p1BoxsPlyd = [];
 var p2BoxsPlyd = [];
 var hasWon = false;
-
+// .includes the boxes played array for if it cn be used or not
 function handleClick(event) {
   if (event.target.textContent === 'X' || event.target.textContent === 'O') {
     return;

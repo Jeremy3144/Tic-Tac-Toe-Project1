@@ -2,42 +2,79 @@
   box-sizing: border-box;
 }
 
+body {
+  background-image: url(images/backGround.jpg);
+}
+
 .main-container {
-  background-color: aquamarine;
-  display: grid;
-  grid-template-rows: 1fr 2fr 7fr;
-  justify-content: center;
-  width: 80%;
+  background-color: rgba(243, 247, 9, 0.707);
+  width: 70%; 
   margin: auto;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
 }
 
 header {
-  background-color: burlywood;
+  background-color: rgba(45, 55, 187, .8);
   text-align: center;
+  font-size: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
-section h2{
-  background-color: cadetblue;
+header h1, h2, button {
+  font-family: 'Carter One', cursive;
+  text-decoration: underline;
+
 }
 
-/* .game-gridwrapper {
-  display: grid;
-  grid-template-rows: auto;
-  grid-gap: 0px;
-} */
+section {
+  background-color: rgb(83, 119, 155);
+  margin-top: -43px;
+  padding: 2%;
+}
 
-/* .row1, .row2, .row3 { */
+section h2 {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.game-info {
+  width: 80%;
+  margin: auto;
+  font-size: 1.5rem;
+  justify-content: stretch;
+}
+
 .game-gridwrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   text-align: center;
-  /* height: 80rem;
-  width: 80rem; */
-  /* border: .2rem solid black; */
-  min-width: 600px;
+  width: 60%;
+  height: 30rem;
+  margin: 5% auto;
+  background-color: blueviolet;
 }
 
 main div {
   border: .2rem solid black;
+}
+
+nav  {
+  /* width: 50%; */
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+button {
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  background-color: rgba(127, 255, 212, 0.221);
+  border-color: black;
 }
