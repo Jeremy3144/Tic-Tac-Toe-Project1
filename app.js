@@ -30,6 +30,9 @@ function handleClick(event) {
     p2BoxsPlyd.push(Number(event.target.dataset.gmbx));
     isPlayer1 = true;
   }
+  if (p1BoxsPlyd.length >= 3) {
+    handleWinner();
+  }
 }
 
 
@@ -45,19 +48,19 @@ var winningBoxes = [
   [7,8,9],
   [1,4,7],
   [2,5,8],
-  [3,4,6],
+  [3,6,9],
   [1,5,9],
   [3,5,7]
 ]
 
 function handleWinner() {
-  // p1BoxsPlyd.sort().join("")
-  // p2BoxsPlyd.sort().join("")
-  for (var i = 0; i < winningBoxes.length; i++) {
-    // console.log(winningBoxes[i]);
 
-    if (p1BoxsPlyd.includes(winningBoxes[i])) {
-      console.log('awdawda');
+  for (var i = 0; i < winningBoxes.length; i++) {
+    if (p1BoxsPlyd.includes(winningBoxes[i][0]) && p1BoxsPlyd.includes(winningBoxes[i][1]) && p1BoxsPlyd.includes(winningBoxes[i][2])) {
+      console.log('player1 wins');
+      
+    } else if (p2BoxsPlyd.includes(winningBoxes[i][0]) &&          p2BoxsPlyd.includes(winningBoxes[i][1]) && p2BoxsPlyd.includes(winningBoxes[i][2])) {
+      console.log('player2 wins');
     }
     
   }  
