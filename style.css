@@ -16,22 +16,26 @@ header {
   text-align: center;
 }
 
-section {
+section h2{
   background-color: cadetblue;
 }
 
-.game-gridwrapper {
+/* .game-gridwrapper {
   display: grid;
   grid-template-rows: auto;
   grid-gap: 0px;
-}
+} */
 
-.row1, .row2, .row3 {
+/* .row1, .row2, .row3 { */
+.game-gridwrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   text-align: center;
+  /* height: 80rem;
+  width: 80rem; */
   /* border: .2rem solid black; */
+  min-width: 600px;
 }
 
 main div {

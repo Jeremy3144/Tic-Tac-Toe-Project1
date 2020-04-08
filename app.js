@@ -15,6 +15,7 @@ var isPlayer1 = true;
 var boxesPlayed = [];
 var p1BoxsPlyd = [];
 var p2BoxsPlyd = [];
+var hasWon = false;
 
 function handleClick(event) {
   if (event.target.textContent === 'X' || event.target.textContent === 'O') {
@@ -24,10 +25,12 @@ function handleClick(event) {
   if (isPlayer1) {
     event.target.textContent = 'X';
     p1BoxsPlyd.push(Number(event.target.dataset.gmbx));
+    boxesPlayed.push(event.target.dataset.gmbx)
     isPlayer1 = false;
   } else {
     event.target.textContent = 'O';
     p2BoxsPlyd.push(Number(event.target.dataset.gmbx));
+    boxesPlayed.push(event.target.dataset.gmbx)
     isPlayer1 = true;
   }
   if (p1BoxsPlyd.length >= 3) {
@@ -58,12 +61,19 @@ function handleWinner() {
   for (var i = 0; i < winningBoxes.length; i++) {
     if (p1BoxsPlyd.includes(winningBoxes[i][0]) && p1BoxsPlyd.includes(winningBoxes[i][1]) && p1BoxsPlyd.includes(winningBoxes[i][2])) {
       console.log('player1 wins');
+      hasWon = true;
       
     } else if (p2BoxsPlyd.includes(winningBoxes[i][0]) &&          p2BoxsPlyd.includes(winningBoxes[i][1]) && p2BoxsPlyd.includes(winningBoxes[i][2])) {
       console.log('player2 wins');
+      hasWon = true;
+
     }
     
   }  
+  if (boxesPlayed.length === 9 && hasWon === false) {
+    console.log('Its a draw');
+    
+  }
 }
 
 
