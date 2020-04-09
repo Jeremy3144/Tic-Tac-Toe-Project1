@@ -50,8 +50,6 @@ gameBtns.forEach(function(btn) {
 })
 
 
-
-
 var winningBoxes = [
   [1,2,3],
   [4,5,6],
@@ -68,38 +66,40 @@ function handleWinner() {
   for (var i = 0; i < winningBoxes.length; i++) {
     if (p1BoxsPlyd.includes(winningBoxes[i][0]) && p1BoxsPlyd.includes(winningBoxes[i][1]) && p1BoxsPlyd.includes(winningBoxes[i][2])) {
       console.log('player1 wins');
-      roundWinner = p1NameInpt.value
+      roundWinner = p1NameInpt.value;
       hasWon = true;
       p1Score += 1;
-      
+      updateDisplay();
+
     } else if (p2BoxsPlyd.includes(winningBoxes[i][0]) &&          p2BoxsPlyd.includes(winningBoxes[i][1]) && p2BoxsPlyd.includes(winningBoxes[i][2])) {
       roundWinner = p2NameInpt.value;
       console.log('player2 wins');
       hasWon = true;
       p2Score += 1;
-
+      updateDisplay();
     }
     
   }  
   if (boxesPlayed.length === 9 && hasWon === false) {
     hasWon = true;
     roundWinner = 'Its A Draw!';
-    
+    updateDisplay();
   }
-  updateDisplay();
 }
 
 function handleNextGame() {
-  isPlayer1 = true;
-  boxesPlayed = [];
-  p1BoxsPlyd = [];
-  p2BoxsPlyd = [];
-  hasWon = false;
-  gameRound += 1;
-  roundWinner = "";
-  gameBtns.forEach(function(box){
-    box.textContent = ""
-  })
+  if (hasWon) {
+    isPlayer1 = true;
+    boxesPlayed = [];
+    p1BoxsPlyd = [];
+    p2BoxsPlyd = [];
+    hasWon = false;
+    gameRound += 1;
+    roundWinner = "";
+    gameBtns.forEach(function(box){
+      box.textContent = ""
+    })
+  }
   updateDisplay();
 }
 
@@ -136,10 +136,15 @@ function updateDisplay() {
   roundNumDisp.textContent = `${gameRound}`
 
   if (hasWon) {
-    winnerDisp.textContent = `${roundWinner} Wins!`
+    if (roundWinner === "Its A Draw!") {
+      winnerDisp.textContent = `${roundWinner}`
+    } else {
+      winnerDisp.textContent = `${roundWinner} Wins!`
+    }
   } else {
     winnerDisp.textContent = `${roundWinner}`
   }
+
 }
 
 plyrAsignBtn.addEventListener('click', updateDisplay)

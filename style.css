@@ -22,7 +22,7 @@ header {
   border-top-right-radius: 1rem;
 }
 
-header h1, h2, button {
+header h1, h2, button, .p1-name-disp, .p2-name-disp, .round {
   font-family: 'Carter One', cursive;
   text-decoration: underline;
 
@@ -43,11 +43,12 @@ section h2 {
 
 .game-info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
+  grid-row-gap: 1rem;
   width: 80%;
-  margin: 1% auto 4% auto;
+  margin: 1% auto 1% auto;
   font-size: 1.5rem;
   justify-content: stretch;
   font-family: 'Roboto', sans-serif;
@@ -55,6 +56,12 @@ section h2 {
 
 .game-info div {
   text-align: center;
+  margin-bottom: -1rem;
+}
+
+.p1-score, .p2-score, .round-num {
+  font-family: 'Unkempt', cursive;
+  font-size: 3rem;
 }
 
 nav  {
@@ -99,6 +106,14 @@ button:hover {
 
 ::placeholder {
   color: rgba(0, 0, 0, 0.385);
+}
+
+.winner {
+  text-align: center;
+  padding: 1rem 0 .5rem 0;
+  font-family: 'Carter One', cursive;
+  font-size: 3rem;
+  color: red;
 }
 
 .game-gridwrapper {
