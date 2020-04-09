@@ -1,6 +1,8 @@
 # Tic - Tac - Toe
 This is a game of tic tac toe
 You need two people to play
+- Link to game
+- https://jeremy3144.github.io/Tic-Tac-Toe-Project1/
 
 ## How to play
 - Put player names into the player name boxes
