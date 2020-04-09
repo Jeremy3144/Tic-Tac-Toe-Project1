@@ -125,7 +125,7 @@ button:hover {
   width: 60%;
   height: 40rem;
   margin: 5% auto;
-  background-color: rgba(60, 157, 71, 0.762);
+  /* background-color: rgba(60, 157, 71, 0.762); */
 }
 
 .btn {
