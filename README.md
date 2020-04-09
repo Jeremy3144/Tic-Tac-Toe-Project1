@@ -1,8 +1,8 @@
 # Tic - Tac - Toe
 This is a game of tic tac toe
 You need two people to play
-- Link to game
-- https://jeremy3144.github.io/Tic-Tac-Toe-Project1/
+Player 1 always goes first
+<a href="https://jeremy3144.github.io/Tic-Tac-Toe-Project1/> Link to game </a>
 
 ## How to play
 - Put player names into the player name boxes
@@ -31,5 +31,5 @@ After all of this i went about the winning logic, i started by getting all the p
 ## Things To Add
 - More CSS style
 - Sounds
-- Switch player feature
+- Switch player turns
 - Resize the app
