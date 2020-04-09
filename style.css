@@ -42,11 +42,19 @@ section h2 {
 }
 
 .game-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
   width: 80%;
   margin: 1% auto 4% auto;
   font-size: 1.5rem;
   justify-content: stretch;
   font-family: 'Roboto', sans-serif;
+}
+
+.game-info div {
+  text-align: center;
 }
 
 nav  {
