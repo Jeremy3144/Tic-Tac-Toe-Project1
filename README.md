@@ -1,5 +1,5 @@
 # Tic - Tac - Toe
-This is a game of tic tac toe
+This is a game of tic tac toe<br/>
 You need two people to play
 Player 1 always goes first
 <a href="https://jeremy3144.github.io/Tic-Tac-Toe-Project1"/> Link to game </a>
