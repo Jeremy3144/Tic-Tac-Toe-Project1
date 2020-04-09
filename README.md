@@ -1,6 +1,8 @@
 # Tic - Tac - Toe
-This is a game of tic tac toe
-You need two people to play
+This is a game of tic tac toe<br/>
+You need two people to play<br/>
+Player 1 always goes first<br/>
+<a href="https://jeremy3144.github.io/Tic-Tac-Toe-Project1"/> Play Me </a>
 
 ## How to play
 - Put player names into the player name boxes
@@ -18,8 +20,16 @@ You need two people to play
 This was my first big project involving CSS, CSS has been a struggle for me so the hardest part of this project was making the front end page.
 I have learnt a lot from this project which i will be able to transfer into other projects.
 
+## Development 
+- JS 
+- HTML
+- CSS
+
+I started by drawing up a mockup on paper from there i made it with HTML, i then went about the logic for the game.
+I first made all the boxes contain a value and then that value is added to a player array when clicked on, after that i made it so a box that is alreay clicked on, wouldnt do anything in the script.
+After all of this i went about the winning logic, i started by getting all the possible wins and puting each one into an array. Once this was done i needed to figure out how to cycle through the player array and check if they have played any of these sequences. After all this was completed i spent a lot of time on the style as it is not my strong suit. after i had it looking nice i started to add in some extra features.
 ## Things To Add
 - More CSS style
 - Sounds
-- Switch player feature
+- Switch player turns
 - Resize the app
